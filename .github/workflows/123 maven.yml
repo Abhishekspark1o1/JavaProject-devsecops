@@ -23,7 +23,7 @@ jobs:
     container:
       image: semgrep/semgrep
     steps:
-       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - run: semgrep ci --sarif > semgrep.sarif
         env:
           SEMGREP_APP_TOKEN:"4e4485e73a07808f2af8a5546e85fc29bed3d0ce4b21b8b6dd77ace1950bc3f8"
